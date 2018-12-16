@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="514.0" prefWidth="638.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="texteCate" layoutX="140.0" layoutY="109.0" prefHeight="25.0" prefWidth="255.0" promptText="Quel genre de produit voulez-vous ?" />
+      <Label layoutX="52.0" layoutY="177.0" text="Vos resultats">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="index" layoutX="53.0" layoutY="46.0" mnemonicParsing="false" onAction="#allerIndex" text="YCVente">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="seConn" layoutX="356.0" layoutY="46.0" mnemonicParsing="false" onAction="#allerConn" text="Se connecter" />
+      <Label layoutX="476.0" layoutY="51.0" text="ou" />
+      <Button fx:id="sInsc" layoutX="509.0" layoutY="46.0" mnemonicParsing="false" onAction="#allerInsc" text="S'inscrire" />
+	  <TableView fx:id="affiche" layoutX="51.0" layoutY="234.0" prefHeight="200.0" prefWidth="520.0">
+        <columns>
+          <TableColumn fx:id="nom" prefWidth="67.0" text="Nom" />
+          <TableColumn fx:id="cate" prefWidth="96.0" text="Categorie" />
+            <TableColumn fx:id="post" prefWidth="75.0" text="Position" />
+            <TableColumn fx:id="prix" prefWidth="60.0" text="Prix(euro)" />
+            <TableColumn fx:id="tpTran" prefWidth="91.0" text="TypeTrans" />
+            <TableColumn fx:id="desc" prefWidth="130.0" text="Description" />
+        </columns>
+      </TableView>      <Button fx:id="chercher" layoutX="454.0" layoutY="108.0" mnemonicParsing="false" onAction="#allerResu" text="Chercher" />
+      <ChoiceBox fx:id="categorie" layoutX="52.0" layoutY="109.0" prefHeight="25.0" prefWidth="75.0" />
+   </children>
+</AnchorPane>

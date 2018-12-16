@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="514.0" prefWidth="638.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="index" layoutX="53.0" layoutY="46.0" mnemonicParsing="false" onAction="#allerIndex" text="YCVente">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="texteCompte" layoutX="253.0" layoutY="48.0" />
+      <MenuButton fx:id="compte" layoutX="476.0" layoutY="49.0" mnemonicParsing="false" text="Compte">
+        <items>
+          <MenuItem fx:id="seDeconnecter" mnemonicParsing="false" onAction="#seDeconnecter" text="Se deconnecter" />
+          <MenuItem fx:id="gererCompte" mnemonicParsing="false" onAction="#gererCompte" text="Gestion de compte" />
+        </items>
+      </MenuButton>
+      <Button fx:id="annuler" layoutX="410.0" layoutY="456.0" mnemonicParsing="false" onAction="#annuler" text="Annuler" />
+      <Button fx:id="creerAnnonce" layoutX="368.0" layoutY="422.0" mnemonicParsing="false" onAction="#creerAnnonce" text="Creer votre annonce" />
+      <TextField fx:id="cp" layoutX="75.0" layoutY="308.0" />
+      <Label layoutX="65.0" layoutY="287.0" text="Code postal">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Separator layoutX="59.0" layoutY="280.0" prefWidth="200.0" />
+      <Separator layoutX="59.0" layoutY="400.0" prefWidth="200.0" />
+      <Separator layoutX="59.0" layoutY="339.0" prefWidth="200.0" />
+      <Label layoutX="65.0" layoutY="346.0" text="Ville">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Separator layoutX="59.0" layoutY="219.0" prefWidth="200.0" />
+      <Label layoutX="65.0" layoutY="226.0" text="Nom de rue">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nomRue" layoutX="75.0" layoutY="247.0" />
+      <TextField fx:id="numRue" layoutX="75.0" layoutY="186.0" />
+      <TextField fx:id="ville" layoutX="75.0" layoutY="367.0" />
+      <Label layoutX="65.0" layoutY="165.0" text="Numero de rue">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Separator layoutX="59.0" layoutY="158.0" prefWidth="200.0" />
+      <Separator layoutX="352.0" layoutY="399.0" prefWidth="200.0" />
+      <Separator layoutX="352.0" layoutY="277.0" prefWidth="200.0" />
+      <Label layoutX="358.0" layoutY="284.0" text="Description">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="description" layoutX="368.0" layoutY="306.0" prefHeight="83.0" prefWidth="171.0" />
+      <Separator layoutX="352.0" layoutY="96.0" prefWidth="200.0" />
+      <TextField fx:id="prix" layoutX="369.0" layoutY="247.0" prefHeight="25.0" prefWidth="171.0" />
+      <Label layoutX="361.0" layoutY="226.0" text="Prix(euro)">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Separator layoutX="352.0" layoutY="156.0" prefWidth="200.0" />
+      <TextField fx:id="pays" layoutX="75.0" layoutY="429.0" />
+      <Label layoutX="65.0" layoutY="408.0" text="Pays">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Separator layoutX="59.0" layoutY="462.0" prefWidth="200.0" />
+      <Label layoutX="360.0" layoutY="103.0" text="Categorie">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="categorie" layoutX="370.0" layoutY="124.0" />
+      <TextField fx:id="tpTran" layoutX="371.0" layoutY="185.0" />
+      <Label layoutX="361.0" layoutY="164.0" text="Type Transaction">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Separator layoutX="355.0" layoutY="218.0" prefWidth="200.0" />
+      <TextField fx:id="nom" layoutX="75.0" layoutY="124.0" />
+      <Label layoutX="65.0" layoutY="103.0" text="Nom">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Separator layoutX="57.0" layoutY="96.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
